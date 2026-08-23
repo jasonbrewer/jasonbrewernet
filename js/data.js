@@ -170,7 +170,7 @@ const PROJECTS = [
   title:"Richmond Rehabbers",           
   category:"HGTV",                    
   description:"Richmond Rehabbers was a one-hour home renovation series created and executive produced by Jason Brewer. Set in the historic city of Richmond, Virginia, the show followed ambitious home flippers as they transformed neglected properties into stunning, market-ready homes. With a focus on both design and the challenges of real estate, Richmond Rehabbers brought local stories to life with the same sharp production values and storytelling that define all of our projects.",
-  video:{ type:"file", src:"assets/gallery/08_RichRehab/RichRehab.mp4", poster:"#" },
+  video:{ type:"youtube", id:"KAejJ3jH9t4" },
 
    },
   
@@ -182,7 +182,7 @@ const PROJECTS = [
   title:"Sir Mix-A-Lot's House Remix",  
   category:"Broadcast Television",    
   description:"Sir Mix-A-Lot's House Remix was a one-hour series for HGTV created and executive produced by Jason Brewer. The show followed Grammy Award-winning artist Sir Mix-A-Lot as he took his passion for real estate and design into the world of house flipping. With his larger-than-life personality and a sharp eye for transformation, the series blended music, celebrity, and home renovation into an unforgettable HGTV project.",
-  video:{ type:"file", src:"assets/gallery/09_mix/mix.mp4", poster:"#" },
+  video:{ type:"youtube", id:"8H1CsHjmG2Y" },
    },
   
 /* ======================== ROW 3 10 Documentary   ======================= */
@@ -191,8 +191,7 @@ const PROJECTS = [
   title:"Restraint and Seclusion",      
   category:"Documentary",             
   description:"Restraint and Seclusion is a powerful documentary examining the controversial use of restraint and seclusion practices in America's public schools. Through firsthand stories, expert insight, and investigative reporting, the film sheds light on how these practices impact students, families, and educators. Created to spark conversation and change, the documentary underscores the urgent need for safer, more compassionate approaches to student care and discipline.",
-  video:{ type:"file", src:"assets/gallery/10_Docu/docu.mp4", poster:"#" },
-
+  video:{ type:"youtube", id:"3cYyr5kvz4w" },
    },
  
 
@@ -202,7 +201,7 @@ const PROJECTS = [
   title:"Zero Waste",                   
   category:"Digital Series",          
   description:"Zero Waste is part of PBS's Science Matters climate change programming, exploring how circular design can help reduce waste and transform how we use resources. The series highlights innovators, communities, and industries rethinking materials to recycle, repurpose, and reuse — moving toward a world where nothing is wasted. With practical examples and inspiring stories, Zero Waste shows how the goal of wasting nothing is not only possible, but essential for a sustainable future.", 
-  video:{ type:"youtube", id:"kupiMqNBuQA" } 
+  video:{ type:"youtube", id:"kupiMqNBuQA" }, 
 },
 
 /* ======================== ROW 3 13 The WAll International Production ======================= */
