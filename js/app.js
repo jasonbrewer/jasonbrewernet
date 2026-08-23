@@ -88,7 +88,8 @@
     if (!v || !v.type) return "";
     var inner = "";
     if (v.type === "youtube") {
-      inner = '<iframe src="https://www.youtube.com/embed/' + esc(v.id) +
+      var yt = esc(v.id) + "?rel=0&modestbranding=1&playsinline=1" + (v.params ? "&" + esc(v.params) : "");
+      inner = '<iframe src="https://www.youtube.com/embed/' + yt +
         '" title="Video" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>';
     } else if (v.type === "vimeo") {
       inner = '<iframe src="https://player.vimeo.com/video/' + esc(v.id) +
