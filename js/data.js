@@ -48,7 +48,7 @@ const HOME = [
   { title:"Freaky Sweets",           thumb:"assets/thumbs/freaky-sweets.png",           href:"project.html?p=freaky-sweets" },
   { title:"Education",               thumb:"assets/thumbs/learntechne.png",             href:"project.html?p=learning-with-teche" },
   { title:"Adventure Capitalists",   thumb:"assets/thumbs/adventure.png",               href:"project.html?p=adventure-capitalist" },
-  { title:"Ilove Virginia",          thumb:"assets/thumbs/adventure.png",               href:"project.html?p=I-Love-VA" },
+  { title:"Ilove Virginia",          thumb:"assets/thumbs/loveposter.png",                    href:"project.html?p=I-Love-VA" },
 ];
 
 
@@ -210,7 +210,7 @@ const PROJECTS = [
   title:"The Wall",                     
   category:"International Production", 
   description:"The Wall was a three-part documentary series produced by Screaming Flea Productions in Seattle and commissioned by Discovery Latin America. The series explored Friendship Park, a unique meeting place along the U.S.–Mexico border in San Diego, where families and friends divided by immigration policy gather at the wall. Through intimate stories and personal perspectives, The Wall shed light on human connection, resilience, and the complexities of life at the border.",
-  video:{ type:"file", src:"assets/gallery/12_intProduction/wall.mp4", poster:"#" },
+  video:{ type:"vimeo", id:"306288438#t=7" },
 
    },
  
@@ -220,6 +220,7 @@ const PROJECTS = [
   title:"Political Advertising",        
   category:"Advertising",             
   description:"Kenya Gibson ran a successful campaign for Richmond City Council's 3rd District, winning the seat in the November 5 election. As a former Richmond School Board member, her victory reflects a deep commitment to public service and community leadership. We're proud to have contributed to this effort and love being part of campaigns that matter. From local races to national initiatives, our team thrives on helping candidates connect with voters through powerful video campaigns that move people to action.",
+  video:{ type:"vimeo", id:"1016739290" },
    },
   
 /* ======================== ROW 4 15 Hoarders  ======================= */
@@ -229,9 +230,9 @@ const PROJECTS = [
   title:"Hoarders",                     
   category:"A&E",                     
   description:"Hoarders is the Emmy-nominated A&E series that has run for 16 seasons, documenting the challenges and breakthroughs of people struggling with compulsive hoarding. Jason Brewer began working on the show in Season 1 and, in later seasons, contributed to the successful two-hour reboot episodes — helping craft treatments, pitches, and budgets that extended the series for an additional six years. His work on Hoarders reflects a deep experience in developing compelling, emotionally resonant unscripted television.",
+  video:{ type:"youtube", id:"_b76FleszLk" },
    },
  
-
 /* ======================== ROW 4 16 cor ads  ======================= */
 
 
@@ -239,6 +240,7 @@ const PROJECTS = [
   title:"Joule + Amazon Alexa",        
    category:"Corporate Ads",           
    description:"This video was part of a three-part series created for ChefSteps' Joule Sous Vide, an innovative smart cooking device from the Seattle-based food tech startup. Guided by Alex, the series walked users step by step through the setup process, making advanced cooking accessible to home chefs. By combining clean visuals, clear instruction, and engaging storytelling, the project helped Joule stand out as a sleek, approachable tool in the growing world of smart kitchen technology.",
+   video:{ type:"youtube", id:"8fzHqKJp_ds" },
     },
   
 
@@ -259,6 +261,7 @@ const PROJECTS = [
   title:"Joule by ChefSteps",          
   category:"Corporate Ads",           
   description:"As part of Joule Sous Vide's customer education series, this video showed home cooks how to achieve a flawless steak every time using smart sous vide technology. With step-by-step guidance, mouthwatering visuals, and Joule's sleek app integration, the piece demonstrated both precision and simplicity. Designed to inspire confidence, it positioned Joule as the go-to tool for restaurant-quality results at home — helping drive excitement and adoption of the product among everyday cooks.",
+  video:{ type:"youtube", id:"GJKXYABapeE" },
    },
   
 
@@ -268,6 +271,7 @@ const PROJECTS = [
   title:"Lost Lake Mystery",            
   category:"Discovery Channel",       
   description:"Lost Lake was a documentary project created by Jason Brewer while at Screaming Flea Productions and commissioned by Discovery Channel. The film follows a group of cousins who believe they are descendants of the infamous pirate Jean Laffite. Armed with family documents and lore, they set out on a modern-day quest in search of lost treasure. Blending history, adventure, and family intrigue, Lost Lake delivered the kind of high-stakes storytelling that captures both imagination and curiosity.",
+  video:{ type:"youtube", id:"0BGJB-2lIII" },
    },
  
 /* ======================== ROW 5 20 legacyList  ======================= */
@@ -275,6 +279,7 @@ const PROJECTS = [
   title:"Legacy List with Matt Paxton", 
   category:"PBS",                     
   description:"Legacy List with Matt Paxton is a nationally broadcast PBS series that helps families preserve memories and uncover hidden treasures as they downsize their homes. Jason Brewer served as Post Production Supervisor, overseeing the edit pipeline, managing teams of remote editors and assistants, and ensuring every episode met PBS's technical and storytelling standards. His role was central in delivering the polished, heartfelt episodes that have made Legacy List a beloved public television program.",
+  video:{ type:"youtube", id:"HqmdLfbQXZw" },
    },
  
 /* ======================== ROW 5 21 WeatherVClimate  ======================= */
@@ -318,7 +323,8 @@ const PROJECTS = [
   title:"Learning with Technie",        
   category:"Education",              
   description:"Learning with Technie was a six-part PBS educational series created to introduce children to technology in a fun and approachable way. Featuring “Technie,” a friendly animated character, the program guided kids through the basics of using computers, exploring digital tools, and imagining what technology can do. By blending engaging animation with hands-on learning, Learning with Technie encouraged curiosity and built confidence — helping young audiences develop essential skills for a digital world.",
-   },
+  video:{ type:"vimeo", id:"LNrY9J5Qs-A" } 
+    },
  
 
 /* ======================== ROW 7 26 Adventurcap ======================= */
@@ -331,7 +337,7 @@ const PROJECTS = [
 
 
 
-/* ======================== ROW 7 27 Adventurcap ======================= */
+/* ======================== ROW 7 27 Love Virginia ======================= */
   { slug:"I-Love-VA",             
   title:"AI Love Virginia",        
   category:"Broadcast",                  
