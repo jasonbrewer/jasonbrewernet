@@ -106,8 +106,7 @@ const PROJECTS = [
   description:"A short-form series exploring the character of Richmond's neighborhoods for a central-Virginia client — capturing the streets, corridors, and everyday texture that give each part of the city its own feel. Shot and composed for 9:16 social from the ground up, in real light and real conditions, built to make a viewer want to go see the place for themselves. Local Virginia storytelling, delivered in the exact vertical format destination content lives on today.",
     videos: [
     { type:"youtube", id:"laXbj7-Bl78" },
-    { type:"youtube", id:"DXpgAoT3aNA" }, 
-    { type:"youtube", id:"wtRJe3ro3Ag" }, 
+    { type:"youtube", id:"DXpgAoT3aNA" },  
     ]
   },
  
@@ -143,7 +142,7 @@ const PROJECTS = [
    title:"Location Drone Reel",          
    category:"Aerial",                  
    description:"From the bright lights of New York City to the golden coasts of California, our drones have captured stunning stories in every corner of America. We've filmed in bustling downtowns, quiet mountain towns, rolling farmland, and rugged coastlines — all on the move for clients who trust us to bring their vision to life. Our schedule takes us across the country to deliver cinematic, drone-driven footage that transforms locations into unforgettable stories.", 
-   video:{ type:"youtube", id:"la7n3DVFVP4" }, 
+   video:{ type:"vimeo", id:"1010025895" }, 
 
  },
  
