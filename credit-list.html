@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Brewer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="site">
+
+    <header class="masthead">
+      <div>
+        <a href="index.html"><h1 class="masthead__name">Jason Brewer</h1></a>
+        <p class="masthead__role">Director of Photography &middot; Editor &middot; Colorist</p>
+      </div>
+      <nav class="masthead__nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="#">Gear</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+<iframe height="1200" style="width: 100%;" scrolling="no" src="https://codepen.io/JJBB001/embed/019ebc1e-5da4-72cd-83ac-933cb91f5c97?default-tab=result" frameborder="no" sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox"></iframe>
+
+    <!-- The selected project renders here from js/data.js -->
+    <main id="project" class="detail"></main>
+
+    <footer class="site-foot">
+      <span>&copy; <span id="year"></span> Jason Brewer</span>
+      <span>Richmond, VA</span>
+    </footer>
+
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
