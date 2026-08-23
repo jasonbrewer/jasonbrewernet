@@ -84,7 +84,7 @@ const PROJECTS = [
   title:"Shenandoah",                   
   category:"Documentary",             
   description:"Documentary for Virginia Public Media and PBS. I was one of several videographers on this feature documentary, and shot three of its segments out in the Virginia landscape — working with natural light, terrain, and changing mountain conditions to capture the region the way it actually feels to be there. The goal on a project like this isn't a staged, polished-commercial look; it's authentic, place-driven footage that holds up for years and lets an audience picture themselves standing in it. Delivered broadcast-ready for national PBS distribution, professionally color-corrected and cut into the finished film. It's exactly the kind of outdoor field cinematography — real places, real conditions, evergreen value — that a destination lives or dies on. See more at pbs.org/show/shenandoah/", 
-  video:{ type:"file", src:"assets/gallery/01_shenandoah/01_shenandoah.mov", poster:"assets/gallery/01_shenandoah/01_Poster.png" },
+  video:{ type:"youtube", id:"4aUJHIzgrQs" }, 
   gallery:["assets/gallery/01_shenandoah/richmond-forum.png"],  
 },
 
@@ -105,9 +105,9 @@ const PROJECTS = [
   category:"Cinematography",          
   description:"A short-form series exploring the character of Richmond's neighborhoods for a central-Virginia client — capturing the streets, corridors, and everyday texture that give each part of the city its own feel. Shot and composed for 9:16 social from the ground up, in real light and real conditions, built to make a viewer want to go see the place for themselves. Local Virginia storytelling, delivered in the exact vertical format destination content lives on today.",
     videos: [
-    { type: "file", src: "assets/gallery/04_CityBroll/04_city01.mp4" },
-    { type: "file", src: "assets/gallery/04_CityBroll/04_city02.mp4" },
-    { type: "file", src: "assets/gallery/04_CityBroll/04_city03.mp4" },
+    video:{ type:"youtube", id:"laXbj7-Bl78" },
+    video:{ type:"youtube", id:"DXpgAoT3aNA" }, 
+    video:{ type:"youtube", id:"wtRJe3ro3Ag" }, 
     ]
   },
  
@@ -143,7 +143,7 @@ const PROJECTS = [
    title:"Location Drone Reel",          
    category:"Aerial",                  
    description:"From the bright lights of New York City to the golden coasts of California, our drones have captured stunning stories in every corner of America. We've filmed in bustling downtowns, quiet mountain towns, rolling farmland, and rugged coastlines — all on the move for clients who trust us to bring their vision to life. Our schedule takes us across the country to deliver cinematic, drone-driven footage that transforms locations into unforgettable stories.", 
-   video:{ type:"file", src:"assets/gallery/05_LocationDroneReel/LandingVideoWeb_26.mp4", poster:"assets/gallery/05_LocationDroneReel/04_Poster.png" },
+   video:{ type:"youtube", id:"la7n3DVFVP4" }, 
 
  },
  
@@ -293,7 +293,7 @@ const PROJECTS = [
   title:"Kitchen Crashers, Season 8",   
   category:"HGTV",                    
   description:"Kitchen Crashers was a hit DIY Network series where unsuspecting homeowners were surprised with dramatic kitchen makeovers. Jason Brewer served as Supervising Producer for Season 8 in Las Vegas, overseeing fast-paced renovation builds from start to finish. He managed production in the field, guided story development, and worked closely with editors to shape engaging episodes — bringing the excitement and transformation of each project to life for viewers nationwide.", 
-  video:{ type:"youtube", id:"XtD23rOXpLk" } 
+  video:{ type:"youtube", id:"XtD23rOXpLk" }
 },
 
 /* ======================== ROW 6 23 KitchenCrashers=  ======================= */
