@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Brewer — Gear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Styles for the gear list. Scoped under .gearlist so they
+       won't collide with anything in css/styles.css. -->
+  <style>
+    .gearlist {
+      --gl-ink:         #e9e6df;
+      --gl-ink-soft:    #9a948a;
+      --gl-line:        #2e2c28;
+      --gl-line-strong: #4a463f;
+      --gl-panel:       #232120;
+      --gl-panel-hover: #2b2825;
+      --gl-accent:      #c98a3c;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+      color: var(--gl-ink);
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    .gearlist__title {
+      font-family: "Archivo", sans-serif;
+      font-weight: 700;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+      margin: 0 0 6px;
+    }
+    .gearlist__note {
+      margin: 0 0 20px;
+      color: var(--gl-ink-soft);
+      font-size: 13px;
+    }
+
+    /* ---- filter pills ---- */
+    .gearlist #filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .gearlist .pill {
+      appearance: none;
+      border: 1px solid var(--gl-line);
+      background: var(--gl-panel);
+      color: var(--gl-ink);
+      font-family: "Archivo", sans-serif;
+      font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 9px 16px; border-radius: 999px; cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .gearlist .pill:hover { background: var(--gl-panel-hover); }
+    .gearlist .pill:focus-visible { outline: 2px solid var(--gl-accent); outline-offset: 2px; }
+    .gearlist .pill[aria-pressed="true"] {
+      background: var(--gl-accent); color: #1b1a18; border-color: var(--gl-accent);
+    }
+    .gearlist .pill .count { opacity: 0.55; margin-left: 6px; font-variant-numeric: tabular-nums; }
+
+    /* ---- status line ---- */
+    .gearlist #status {
+      margin: 0 0 18px;
+      font-family: "Archivo", sans-serif;
+      font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--gl-ink-soft);
+    }
+
+    /* ---- table ---- */
+    .gearlist table { width: 100%; border-collapse: collapse; }
+    .gearlist thead th {
+      text-align: left;
+      font-family: "Archivo", sans-serif;
+      font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gl-ink-soft); font-weight: 600;
+      padding: 0 12px 10px 0;
+      border-bottom: 1px solid var(--gl-line-strong);
+      white-space: nowrap; cursor: pointer; user-select: none;
+    }
+    .gearlist thead th:hover { color: var(--gl-ink); }
+    .gearlist thead th.sort-asc::after  { content: " \2191"; color: var(--gl-accent); }
+    .gearlist thead th.sort-desc::after { content: " \2193"; color: var(--gl-accent); }
+
+    .gearlist tbody td {
+      padding: 11px 12px 11px 0;
+      border-bottom: 1px solid var(--gl-line);
+      vertical-align: top;
+    }
+    .gearlist tbody tr:hover td { background: var(--gl-panel); }
+    .gearlist tbody td:first-child { font-weight: 500; color: var(--gl-ink); }
+
+    .gearlist #empty { display: none; padding: 36px 0; color: var(--gl-ink-soft); }
+
+    /* ---- mobile: collapse the table into stacked rows ---- */
+    @media (max-width: 640px) {
+      .gearlist { padding: 16px 14px 48px; }
+      .gearlist thead { display: none; }
+      .gearlist table, .gearlist tbody, .gearlist tr, .gearlist td { display: block; width: 100%; }
+      .gearlist tbody tr { padding: 13px 0; border-bottom: 1px solid var(--gl-line); }
+      .gearlist tbody td { padding: 2px 0; border: none; }
+      .gearlist tbody td::before {
+        content: attr(data-label) ": ";
+        color: var(--gl-ink-soft); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase;
+      }
+      .gearlist tbody td:first-child { font-size: 16px; margin-bottom: 2px; }
+      .gearlist tbody td:first-child::before { content: ""; }
+      .gearlist tbody td:empty { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .gearlist .pill { transition: none; }
+    }
+    .masthead__nav a[aria-current="page"] { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="masthead">
+      <div>
+        <a href="index.html"><h1 class="masthead__name">Jason Brewer</h1></a>
+        <p class="masthead__role">Video Production Services</p>
+      </div>
+      <nav class="masthead__nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="gear.html" aria-current="page">Gear</a>
+        <a href="credit-list.html">Credits</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- ===== Gear list (live from a published Google Sheet) ===== -->
+    <main class="gearlist">
+      <h2 class="gearlist__title">Gear List</h2>
+      <p class="gearlist__note">Owned and operated. Available for productions nationwide.</p>
+
+      <nav id="filters" aria-label="Filter gear by category"></nav>
+      <p id="status">Loading gear&hellip;</p>
+
+      <table id="gear" hidden>
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <p id="empty">No gear matches this filter.</p>
+    </main>
+    <!-- ===== /Gear list ===== -->
+
+    <footer class="site-foot">
+      <span>&copy; <span id="year"></span> Jason Brewer</span>
+      <span>Richmond, VA</span>
+    </footer>
+  </div>
+
+  <script>
+  /* =========================================================
+     CONFIG — edit these two things and nothing else
+     ========================================================= */
+
+  // Live CSV feed of the PUBLISHED gear sheet.
+  // In the sheet: File > Share > Publish to web > (this tab) > Comma-separated
+  // values (.csv) > Publish. Copy that URL and paste it below.
+  const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1_sm_tE4t7fTP6gN0P6N2FM8wVu983HfBsg4avuTCp4I/edit?gid=0#gid=0";
+
+  // Header name (any case) whose column becomes the filter pills.
+  // Add a "Category" column to your sheet (Cameras, Lenses, Lighting, Audio,
+  // Grip, Drone, etc.) and the pills build themselves. If it's missing,
+  // the page just shows a sortable table with an "All" view.
+  const CATEGORY_KEYS = ["category", "type", "group", "section", "kind"];
+
+  /* =========================================================
+     CSV parsing (handles quoted fields, commas, newlines)
+     ========================================================= */
+  function parseCSV(text) {
+    const rows = [];
+    let row = [], field = "", inQuotes = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (inQuotes) {
+        if (c === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else inQuotes = false; }
+        else field += c;
+      } else if (c === '"') { inQuotes = true; }
+      else if (c === ",") { row.push(field); field = ""; }
+      else if (c === "\n" || c === "\r") {
+        if (c === "\r" && text[i + 1] === "\n") i++;
+        row.push(field); field = ""; rows.push(row); row = [];
+      } else { field += c; }
+    }
+    if (field !== "" || row.length) { row.push(field); rows.push(row); }
+    return rows;
+  }
+
+  /* Turn raw rows into { headers:[], data:[[...]] } using the first
+     non-empty row as the header. */
+  function process(rows) {
+    let h = -1;
+    for (let i = 0; i < rows.length; i++) {
+      if (rows[i].some(c => c && c.trim() !== "")) { h = i; break; }
+    }
+    if (h === -1) return { headers: [], data: [] };
+
+    const rawH = rows[h].map(c => (c || "").trim());
+    const idxs = [];
+    rawH.forEach((name, i) => { if (name !== "") idxs.push(i); });
+    const headers = idxs.map(i => rawH[i]);
+
+    const data = [];
+    for (let i = h + 1; i < rows.length; i++) {
+      const r = rows[i];
+      if (!r || !r.some(c => c && c.trim() !== "")) continue;
+      data.push(idxs.map(i => (r[i] != null ? String(r[i]).trim() : "")));
+    }
+    return { headers, data };
+  }
+
+  /* =========================================================
+     Rendering
+     ========================================================= */
+  const filtersEl = document.getElementById("filters");
+  const statusEl  = document.getElementById("status");
+  const tableEl   = document.getElementById("gear");
+  const theadRow  = tableEl.querySelector("thead tr");
+  const tbodyEl   = tableEl.querySelector("tbody");
+  const emptyEl   = document.getElementById("empty");
+
+  let HEADERS = [], ROWS = [], catIdx = -1;
+  let activeCat = null;           // null = All
+  let sortCol = null, sortDir = 1;
+
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+
+  function matches(row) { return activeCat == null || (row[catIdx] || "") === activeCat; }
+
+  function renderFilters() {
+    filtersEl.innerHTML = "";
+    if (catIdx === -1) return;    // no category column -> no pills
+
+    const cats = [];
+    ROWS.forEach(r => { const v = r[catIdx]; if (v && !cats.includes(v)) cats.push(v); });
+    cats.sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
+
+    const make = (label, value) => {
+      const btn = document.createElement("button");
+      btn.className = "pill"; btn.type = "button";
+      btn.setAttribute("aria-pressed", activeCat === value ? "true" : "false");
+      const n = value == null ? ROWS.length : ROWS.filter(r => (r[catIdx] || "") === value).length;
+      btn.innerHTML = esc(label) + '<span class="count">' + n + "</span>";
+      btn.addEventListener("click", () => { activeCat = value; renderFilters(); renderTable(); });
+      filtersEl.appendChild(btn);
+    };
+    make("All", null);
+    cats.forEach(c => make(c, c));
+  }
+
+  function renderHead() {
+    theadRow.innerHTML = HEADERS.map((h, i) =>
+      '<th data-col="' + i + '">' + esc(h) + "</th>").join("");
+    theadRow.querySelectorAll("th").forEach(th => {
+      th.addEventListener("click", () => {
+        const col = +th.dataset.col;
+        if (sortCol === col && sortDir === 1) sortDir = -1;
+        else if (sortCol === col && sortDir === -1) { sortCol = null; sortDir = 1; }
+        else { sortCol = col; sortDir = 1; }
+        theadRow.querySelectorAll("th").forEach(h => h.classList.remove("sort-asc", "sort-desc"));
+        if (sortCol !== null) th.classList.add(sortDir === 1 ? "sort-asc" : "sort-desc");
+        renderTable();
+      });
+    });
+  }
+
+  function renderTable() {
+    let list = ROWS.filter(matches);
+    if (sortCol !== null) {
+      list = list.slice().sort((a, b) =>
+        (a[sortCol] || "").localeCompare((b[sortCol] || ""), undefined, { numeric: true, sensitivity: "base" }) * sortDir);
+    }
+    tbodyEl.innerHTML = list.map(r =>
+      "<tr>" + HEADERS.map((h, i) =>
+        '<td data-label="' + esc(h) + '">' + esc(r[i] || "") + "</td>").join("") + "</tr>").join("");
+
+    const label = activeCat == null ? "" : " \u00b7 " + activeCat;
+    statusEl.textContent = list.length + (list.length === 1 ? " item" : " items") + label;
+    tableEl.hidden = list.length === 0;
+    emptyEl.style.display = list.length === 0 ? "block" : "none";
+  }
+
+  /* =========================================================
+     Boot
+     ========================================================= */
+  (async function init() {
+    if (SHEET_CSV_URL.indexOf("PASTE_") === 0) {
+      statusEl.textContent = "Add your published Google Sheet CSV link in gear.html to load the list.";
+      return;
+    }
+    try {
+      const res = await fetch(SHEET_CSV_URL, { cache: "no-store" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const parsed = process(parseCSV(await res.text()));
+      if (!parsed.headers.length) throw new Error("No header row found");
+      HEADERS = parsed.headers;
+      ROWS = parsed.data;
+      catIdx = HEADERS.findIndex(h => CATEGORY_KEYS.includes(h.toLowerCase()));
+      renderHead();
+      renderFilters();
+      renderTable();
+    } catch (err) {
+      console.error("Could not load the gear sheet:", err);
+      statusEl.textContent = "Couldn\u2019t load the gear list right now. Please try again shortly.";
+    }
+  })();
+
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

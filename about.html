@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Brewer — About</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- About-page layout only. Colors/fonts come from css/styles.css tokens. -->
+  <style>
+    .about        { max-width: 1100px; margin: 0 auto; padding: 0 var(--pad) 2rem; text-align: center; }
+    .about__eyebrow {
+      margin: 0 0 26px; color: var(--accent);
+      font-size: var(--fs-sm); letter-spacing: var(--tracking-wide); text-transform: uppercase;
+    }
+    .about__portrait {
+      position: relative; width: min(360px, 80vw); aspect-ratio: 4 / 5;
+      margin: 0 auto; background: var(--surface);
+    }
+    .about__portrait img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; }
+    .about__portrait .hint {
+      position: absolute; inset: 0; z-index: 0;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      padding: 20px; color: var(--text-dim); font-size: var(--fs-sm);
+    }
+    .about__cap {
+      margin: 18px 0 0; color: var(--text-dim);
+      font-size: var(--fs-sm); letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .about__bio   { max-width: 640px; margin: 42px auto 0; text-align: left; }
+    .about__bio p { margin: 0 0 1.3rem; color: var(--text); font-size: var(--fs-lg); line-height: 1.7; }
+    .about__bio p:first-of-type {
+      font-family: var(--font-display); font-weight: 500;
+      font-size: var(--fs-xl); line-height: 1.3;
+    }
+    .about__bio .accent { color: var(--accent); }
+    .about__rule  { height: 1px; background: var(--line); border: 0; max-width: 640px; margin: 48px auto 0; }
+    .masthead__nav a[aria-current="page"] { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header class="masthead">
+      <div>
+        <a href="index.html"><h1 class="masthead__name">Jason Brewer</h1></a>
+        <p class="masthead__role">Video Production Services</p>
+      </div>
+      <nav class="masthead__nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="gear.html">Gear</a>
+        <a href="credit-list.html">Credits</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="about">
+      <p class="about__eyebrow">About</p>
+
+      <!-- Drop your photo at assets/about/portrait.jpg (portrait, ~4:5).
+           Until it exists, the frame shows a note instead of a broken image. -->
+      <div class="about__portrait">
+        <span class="hint">Add your portrait at<br>assets/about/portrait.jpg</span>
+        <img src="assets/about/portrait.jpeg" alt="Jason Brewer" onerror="this.style.display='none'">
+      </div>
+      <p class="about__cap">Director of Photography &middot; Richmond, VA</p>
+
+      <!-- ===== Placeholder bio — replace this copy ===== -->
+      <div class="about__bio">
+          
+          <p>I’m Jason Brewer, a video producer and director with over 20 years of experience creating content that connects. My career spans broadcast television, documentary, and branded storytelling — from directing more than 100 episodes of A&E’s Hoarders to supervising post-production for PBS’s acclaimed Legacy List. </p>
+
+          <p> I’ve led creative teams for HGTV, DIY, Discovery, Food Network, and PBS, developing and producing shows like Kitchen Crashers, Made in America, Sir-Mix-A-Lot’s House Remix, and Freaky Sweets. In every role, I’ve blended sharp storytelling instincts with technical mastery, managing projects from concept through final delivery while keeping budgets, timelines, and creative integrity on track.</p>
+
+          <p>As the founder of JPBREWER LLC, I now bring the same level of broadcast-quality storytelling to businesses and organizations. My team helps mid-sized companies, franchises, and nonprofits grow their reach with episodic, reality-style video content designed to drive engagement and sales. By combining cinematic production value with proven narrative techniques, we create videos that don’t just inform — they entertain, inspire, and convert.</p>
+         
+          <p>I’m passionate about turning real stories into compelling experiences that resonate with audiences, whether the goal is national broadcast or a social media campaign. With deep expertise in directing, editing, and post-production supervision, I ensure every project is delivered with precision, creativity, and impact.</p>
+      </div>
+
+      <hr class="about__rule">
+    </main>
+
+    <footer class="site-foot">
+      <span>&copy; <span id="year"></span> Jason Brewer</span>
+      <span>Richmond, VA</span>
+    </footer>
+  </div>
+
+  <script>
+    var y = document.getElementById("year");
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
