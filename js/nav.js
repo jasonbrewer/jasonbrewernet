@@ -15,7 +15,8 @@
   var NAV_LINKS = [
     { label: "About",       href: "about.html" },
     { label: "Credit List", href: "credit-list.html" },
-    { label: "Contact",     href: "#book", book: true },   // book:true => opens the booking modal
+    { label: "Book a Call",     href: "#book", book: true },   // book:true => opens the booking modal
+    { label: "Message Me",  href: "#message", form: true }, // form:true => opens the message-form modal
     { label: "Gear List",   href: "gear.html" }
   ];
 
@@ -27,12 +28,15 @@
   var CAL_IFRAME = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0qjWiIAEzrOzFrJyPog1yhmflvRvygPZNrkt3rDzJJODqFgFjuJjFt0MbrnmrnKViamDnOXc_w?gv=true";
   var CAL_LINK   = "https://calendar.app.google/YcjTkyQbm9hJv12t8";
 
+  /* ---- Google Form (Message Me) ---- */
+  var FORM_SRC   = "https://docs.google.com/forms/d/e/1FAIpQLSfPHjFPnfVxNNdRC5nDXPrLdTj5BUlFxpJpX6M7auu8n99Cgw/viewform?embedded=true";
+
   /* ---- current filename, for active-link highlighting ---- */
   var here = location.pathname.split("/").pop() || "index.html";
 
   function navLinksHTML() {
     return NAV_LINKS.map(function (l) {
-      var cls = l.book ? ' class="js-book"' : "";
+      var cls = l.book ? ' class="js-book"' : (l.form ? ' class="js-form"' : "");
       var cur = (l.href === here) ? ' aria-current="page"' : "";
       return '<a href="' + l.href + '"' + cls + cur + ">" + l.label + "</a>";
     }).join("");
@@ -64,6 +68,18 @@
     );
   }
 
+  function formModalHTML() {
+    return (
+      '<div class="book-overlay" id="formOverlay" role="dialog" aria-modal="true" aria-label="Message me">' +
+        '<div class="book-modal book-modal--form">' +
+          '<div class="book-head"><h3>Message me</h3>' +
+            '<button class="book-close" id="formClose" aria-label="Close">&times;</button></div>' +
+          '<div class="book-body"><iframe id="formFrame" title="Message form" loading="lazy"></iframe></div>' +
+        "</div>" +
+      "</div>"
+    );
+  }
+
   var STYLES =
     ".book-overlay{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.7);" +
     "display:none;align-items:center;justify-content:center;padding:20px;}" +
@@ -77,6 +93,8 @@
     ".book-close:hover{color:#e9e6df;}" +
     ".book-body{position:relative;height:78vh;}" +
     ".book-body iframe{width:100%;height:100%;border:0;display:block;}" +
+    ".book-modal--form{max-width:680px;}" +
+    ".book-modal--form .book-body{height:600px;max-height:78vh;}" +
     ".masthead__brand{text-decoration:none;color:inherit;display:inline-block;}";
 
   function boot() {
@@ -89,8 +107,9 @@
     var mount = document.querySelector(".site") || document.body;
     mount.insertAdjacentHTML("afterbegin", headerHTML());
 
-    /* inject the booking modal at the end of body */
+    /* inject the booking + message-form modals at the end of body */
     document.body.insertAdjacentHTML("beforeend", modalHTML());
+    document.body.insertAdjacentHTML("beforeend", formModalHTML());
 
     /* booking behaviour: desktop = modal, mobile = new tab */
     var overlay = document.getElementById("bookOverlay");
@@ -105,13 +124,28 @@
     }
     function closeBook() { overlay.classList.remove("open"); document.body.style.overflow = ""; }
 
+    /* message form: modal on all screen sizes */
+    var formOverlay = document.getElementById("formOverlay");
+    var formFrame   = document.getElementById("formFrame");
+    var formLoaded  = false;
+    function openForm() {
+      if (!formLoaded) { formFrame.src = FORM_SRC; formLoaded = true; }
+      formOverlay.classList.add("open");
+      document.body.style.overflow = "hidden";
+    }
+    function closeForm() { formOverlay.classList.remove("open"); document.body.style.overflow = ""; }
+
     document.addEventListener("click", function (e) {
       var b = e.target.closest(".js-book");
-      if (b) { e.preventDefault(); openBook(); }
+      if (b) { e.preventDefault(); openBook(); return; }
+      var f = e.target.closest(".js-form");
+      if (f) { e.preventDefault(); openForm(); }
     });
     document.getElementById("bookClose").addEventListener("click", closeBook);
+    document.getElementById("formClose").addEventListener("click", closeForm);
     overlay.addEventListener("click", function (e) { if (e.target === overlay) closeBook(); });
-    document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeBook(); });
+    formOverlay.addEventListener("click", function (e) { if (e.target === formOverlay) closeForm(); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeBook(); closeForm(); } });
   }
 
   if (document.readyState === "loading") {
