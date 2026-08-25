@@ -370,19 +370,94 @@ const PROJECTS = [
    /* =======================  Steri clean Project pages from Steri-collection ===================== */
    /* =======================  Steri clean Project pages from Steri-collection ===================== */
    /* =======================  Steri clean Project pages from Steri-collection ===================== */
+  /* ---- Steri-Clean collection ---- */
+  { slug:"discovery-day",
+  title:"Discovery Day",
+  category:"Steri-Clean Collection",
+  locked:true,
+  description:"This Discovery Day video gives you a clear, no-fluff look at how the franchise really works. In just a few minutes, you'll hear exactly how royalties are structured, what to expect for start-up costs, and how territories are defined and protected. It also covers how Steri-Clean started and continues to grow. It's designed to answer the big financial and operational questions upfront so you can quickly decide if this opportunity is the right fit for your goals and your market.",
+  video:{ type:"youtube", id:"C_Qb29LIn-0" }
+  },
 
-  { slug:"discovery-day",                title:"Discovery Day",                category:"Steri-Clean Collection", locked:true, description:"Add the write-up for this project here." },
-  { slug:"buying-a-franchise",           title:"Buying a Franchise",           category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"true-crime-cleanup",           title:"True Crime Cleanup",           category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"hoarder-stories",              title:"Hoarder Stories",              category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"training",                     title:"Training",                     category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"murder-and-suicide-cleanup",   title:"Murder and Suicide Cleanup",   category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"body-decomposition",           title:"Body Decomposition",           category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"drug-cleanup",                 title:"Drug Cleanup",                 category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"client-stories",               title:"Client Stories",               category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"animal-waste-removal",         title:"Animal Waste Removal",         category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"pigeon-cleanup-and-deterrent", title:"Pigeon Cleanup and Deterrent", category:"Steri-Clean Collection", description:"Add the write-up for this project here." },
-  { slug:"odor-removal",                 title:"Odor Removal",                 category:"Steri-Clean Collection", description:"Add the write-up for this project here." }
+  { slug:"buying-a-franchise",
+  title:"Buying a Franchise",
+  category:"Steri-Clean Collection",
+  description:"We partnered with Steri-Clean — a nationwide leader in crime-scene, biohazard, hoarding, and trauma-cleanup services — to drive franchise sales and help them scale across the country. Known for delivering compassionate remediation with industry-best protocols since 1995, Steri-Clean leveraged our storytelling expertise to showcase their trusted brand and compassionate approach. Check out the Steri-Clean Collection in the top tab to see our work in action.",
+  video:{ type:"youtube", id:"xj7-ZqnMIQE" }
+  },
+
+  { slug:"true-crime-cleanup",
+  title:"True Crime Cleanup",
+  category:"Steri-Clean Collection",
+  description:"We teamed up with Steri-Clean to create True Crime Cleanup, a documentary-style series that reveals what happens after the headlines fade. Instead of focusing on the crime itself, we follow the families, technicians, and quiet moments of recovery — capturing the raw emotion, grief, and resilience that surround these scenes. Through intimate interviews and cinematic on-location footage, the series shows the specialized work of crime scene cleanup with honesty and respect, highlighting the compassion, discretion, and professionalism it takes to help people begin to move forward.",
+  video:{ type:"youtube", id:"jw0t-8rTEN4" }
+  },
+
+  { slug:"hoarder-stories",
+  title:"Hoarder Stories",
+  category:"Steri-Clean Collection",
+  description:"Hoarding is rarely about the clutter — it's about the person underneath it. In this series we follow Steri-Clean's teams into homes that have quietly overwhelmed the people living in them, capturing the trust it takes to let someone in and the care it takes to help them reclaim their space. These are stories told with dignity, not spectacle: real families, real turning points, and the patient, judgment-free work of helping someone start over.",
+  videos:[
+    { type:"youtube", id:"8edSOdH3-Hs" },
+    { type:"youtube", id:"4TcZarN-LIU" }
+  ]
+  },
+
+  { slug:"training",
+  title:"Training",
+  category:"Steri-Clean Collection",
+  description:"Behind every call is a crew that has to be ready for anything. This piece looks at how Steri-Clean prepares its technicians — the protocols, the safety standards, and the hands-on instruction that turn a difficult job into work done right. It's a look at the discipline and professionalism that clients never see, but depend on every time.",
+  video:{ type:"youtube", id:"1bq63IHI_b8" }
+  },
+
+  { slug:"murder-and-suicide-cleanup",
+  title:"Murder and Suicide Cleanup",
+  category:"Steri-Clean Collection",
+  description:"Some of the hardest calls come in the worst moments of a family's life. This piece shows how Steri-Clean handles murder and suicide scenes with the discretion, sensitivity, and technical rigor they demand — restoring a space safely so a family doesn't have to face it themselves. It's careful, compassionate work, captured with the respect the subject deserves.",
+  video:{ type:"youtube", id:"cYujsC48nUE" }
+  },
+
+  { slug:"body-decomposition",
+  title:"Body Decomposition",
+  category:"Steri-Clean Collection",
+  description:"Unattended death is one of the most demanding jobs in remediation, requiring specialized equipment, strict biohazard protocols, and a steady, compassionate approach. This piece follows Steri-Clean's technicians as they safely restore a space and take that burden off the family's shoulders — showing the expertise and care that make this difficult work possible.",
+  video:{ type:"youtube", id:"vdLhY8UYVdE" }
+  },
+
+  { slug:"drug-cleanup",
+  title:"Drug Cleanup",
+  category:"Steri-Clean Collection",
+  description:"Drug residue and contamination pose real, often invisible dangers to anyone who enters a space afterward. This piece shows how Steri-Clean identifies, contains, and safely removes hazardous substances — from fentanyl exposure to full decontamination — protecting property owners, tenants, and future occupants with the protocols the work demands.",
+  video:{ type:"youtube", id:"1knzp9YWm3g" }
+  },
+
+  { slug:"client-stories",
+  title:"Client Stories",
+  category:"Steri-Clean Collection",
+  description:"The best measure of this work is the people it helps. In Client Stories, the families and property owners Steri-Clean has served speak for themselves — sharing what it meant to have compassionate, professional help in a moment they never expected to face. Honest, first-hand, and a reminder of why this work matters.",
+  video:{ type:"youtube", id:"vCwDemNWZxE" }
+  },
+
+  { slug:"animal-waste-removal",
+  title:"Animal Waste Removal",
+  category:"Steri-Clean Collection",
+  description:"Animal waste and infestation can leave a property unsafe long after the source is gone, carrying serious health risks that ordinary cleaning can't touch. This piece follows Steri-Clean's teams as they decontaminate, deodorize, and fully restore affected spaces — bringing homes and buildings back to a safe, livable condition.",
+  video:{ type:"youtube", id:"WdxMGictn4Y" }
+  },
+
+  { slug:"pigeon-cleanup-and-deterrent",
+  title:"Pigeon Cleanup and Deterrent",
+  category:"Steri-Clean Collection",
+  description:"Pigeon droppings are more than an eyesore — they carry disease and can damage a building over time. This piece shows how Steri-Clean safely removes the mess, decontaminates the area, and installs deterrents to keep birds from coming back, protecting both the property and the people who use it.",
+  video:{ type:"youtube", id:"Ku8dBdzVdQU" }
+  },
+
+  { slug:"odor-removal",
+  title:"Odor Removal",
+  category:"Steri-Clean Collection",
+  description:"Stubborn odors are often a sign of something deeper that surface cleaning can't fix. This piece shows how Steri-Clean gets to the source — using professional-grade equipment and proven techniques to fully neutralize odors rather than mask them, leaving a space genuinely clean and fresh.",
+  video:{ type:"youtube", id:"3bFFmUUTvmM" }
+  }
 ];
 
 
