@@ -13,6 +13,7 @@
 
   /* ---- 1) EDIT THIS: the nav links (change once, updates everywhere) ---- */
   var NAV_LINKS = [
+    { label: "Home",       href: "index.html" },
     { label: "About",       href: "about.html" },
     { label: "Credit List", href: "credit-list.html" },
     { label: "Book a Call",     href: "#book", book: true },   // book:true => opens the booking modal
