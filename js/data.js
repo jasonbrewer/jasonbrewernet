@@ -79,6 +79,19 @@ const COLLECTIONS = {
 const PROJECTS = [
 
 
+
+
+
+/* ======================== ROW 7 27 Love Virginia ======================= */
+  { slug:"I-Love-VA",             
+  title:"AI Love Virginia",        
+  category:"Broadcast",                  
+  description:"Adventure Capitalist was a CNBC original series created by the development team at Screaming Flea Productions, led by Jason Brewer. The show followed investors as they traveled to remote and rugged locations to test daring new products designed for outdoor adventure. Combining entrepreneurship with exploration, Adventure Capitalist highlighted both the risks and rewards of innovation — showcasing how bold ideas can thrive in some of the world's most extreme environments.", 
+  video:{ type:"youtube", id:"P_DVn_OL6vk" }
+   },
+
+
+
 /* ======================== ROW 1  01 Shenandoah   ======================= */
   { slug:"shenandoah-documentary",           
   title:"Shenandoah",                   
@@ -336,14 +349,6 @@ const PROJECTS = [
    },
 
 
-
-/* ======================== ROW 7 27 Love Virginia ======================= */
-  { slug:"I-Love-VA",             
-  title:"AI Love Virginia",        
-  category:"Broadcast",                  
-  description:"Adventure Capitalist was a CNBC original series created by the development team at Screaming Flea Productions, led by Jason Brewer. The show followed investors as they traveled to remote and rugged locations to test daring new products designed for outdoor adventure. Combining entrepreneurship with exploration, Adventure Capitalist highlighted both the risks and rewards of innovation — showcasing how bold ideas can thrive in some of the world's most extreme environments.", 
-  video:{ type:"youtube", id:"P_DVn_OL6vk" }
-   },
 
 
 
