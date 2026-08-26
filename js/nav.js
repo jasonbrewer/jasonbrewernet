@@ -18,7 +18,8 @@
     { label: "Credit List", href: "credit-list.html" },
     { label: "Book a Call",     href: "#book", book: true },   // book:true => opens the booking modal
     { label: "Message Me",  href: "#message", form: true }, // form:true => opens the message-form modal
-    { label: "Gear List",   href: "gear.html" }
+    { label: "Gear List",   href: "gear.html" },
+    { label: "Pricing",   href: "scope.html" },
   ];
 
   var BRAND     = "Jason Brewer";
