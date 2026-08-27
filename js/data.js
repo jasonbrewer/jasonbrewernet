@@ -113,7 +113,7 @@ const PROJECTS = [
   description:"Documentary for Virginia Public Media and PBS. I was one of several videographers on this feature documentary, and shot three of its segments out in the Virginia landscape — working with natural light, terrain, and changing mountain conditions to capture the region the way it actually feels to be there. The goal on a project like this isn't a staged, polished-commercial look; it's authentic, place-driven footage that holds up for years and lets an audience picture themselves standing in it. Delivered broadcast-ready for national PBS distribution, professionally color-corrected and cut into the finished film. It's exactly the kind of outdoor field cinematography — real places, real conditions, evergreen value — that a destination lives or dies on. See more at pbs.org/show/shenandoah/", 
    videos: [
     { type:"youtube", id:"4aUJHIzgrQs" },
-    { type:"youtube", id:"fG8o2hbkcts" },  
+    { type:"youtube", vertical:true, id:"fG8o2hbkcts" },  
     ],
   gallery:["assets/gallery/01_shenandoah/richmond-forum.png"],  
 },

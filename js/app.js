@@ -101,7 +101,8 @@
       return '<div class="media"><video class="media__native" controls preload="none"' +
         poster + ' src="' + esc(v.src) + '"></video></div>';
     }
-    return '<div class="media"><div class="media__frame">' + inner + "</div></div>";
+    var vert = v.vertical ? " media__frame--vertical" : "";
+    return '<div class="media"><div class="media__frame' + vert + '">' + inner + "</div></div>";
   }
 
   function videosBlock(list) {
