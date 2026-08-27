@@ -138,6 +138,7 @@ const PROJECTS = [
   description:"A short-form series exploring the character of Richmond's neighborhoods for a central-Virginia client — capturing the streets, corridors, and everyday texture that give each part of the city its own feel. Shot and composed for 9:16 social from the ground up, in real light and real conditions, built to make a viewer want to go see the place for themselves. Local Virginia storytelling, delivered in the exact vertical format destination content lives on today.",
     videos: [
     { type:"youtube", id:"laXbj7-Bl78" },
+    { type:"youtube", vertical:true, id:"AgRmTnWwDlo" },
     { type:"youtube", id:"DXpgAoT3aNA" },  
     ]
   },
