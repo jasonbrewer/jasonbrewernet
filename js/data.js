@@ -115,7 +115,7 @@ const PROJECTS = [
     { type:"youtube", id:"4aUJHIzgrQs" },
     { type:"youtube", vertical:true, id:"fG8o2hbkcts" },  
     ],
-  gallery:["assets/gallery/01_shenandoah/richmond-forum.png"],  
+  gallery:["assets/gallery/02_williamsburg/williamsburg_8k_reframe_eli5.png"],  
 },
 
 
@@ -126,7 +126,16 @@ const PROJECTS = [
   title:"Williamsburg Foundation",      
   category:"Institutional",     
   gallery:["assets/gallery/02_williamsburg/will_01.jpeg","assets/gallery/02_williamsburg/will_02.jpeg"],      
-  description:"When the Colonial Williamsburg Foundation opened the 40,000-square-foot Campbell Archaeology Center in April 2026 — a signature project for America's 250th anniversary, and the only facility in the country to put both a working archaeology lab and its artifacts on public display, stewarding a collection of nearly 60 million objects — I was the videographer and editor behind its permanent video installation. The piece plays across four screens built from eight 75-inch panels mounted vertically, shot entirely in 8K: high-resolution capture composed specifically for vertical presentation, and finished to run continuously — every day, in a world-class museum — rather than for a single campaign. Much of it was shot outdoors, on location across Colonial Williamsburg's public park grounds and historic green spaces — combining ground-based field capture with aerial drone cinematography over the grounds, working in natural light and real, changing conditions to capture the setting authentically, the way a visitor actually experiences it. Everything in 8K, professionally color-corrected and edited, composed for vertical display, and built as a permanent, evergreen asset the institution will run for years. Outdoor, aerial and ground, high-resolution, vertical-first, and made to last — the same standard a destination content library lives on. It's exactly what destination work depends on. Contractually I can't post the video — but it's better in person anyway. Plan your visit at colonialwilliamsburg.org.",
+  description:`When the Colonial Williamsburg Foundation opened its 40,000-square-foot Campbell Archaeology Center — a signature project for America's 250th anniversary, and the only facility in the country to put both a working archaeology lab and its artifacts on public display — I was the videographer and editor behind its permanent video installation. Shot entirely in 8K across the historic grounds, combining ground-based field capture with aerial drone cinematography, it was built as an evergreen asset the institution will run every day for years.
+
+## Aspect Ratio Problem-Solving
+
+![assets/gallery/02_williamsburg/williamsburg_8k_reframe_eli5.png]
+
+The tricky part of this install wasn't the shooting — it was the geometry. The finished piece had to play across two tall vertical screens set side by side, forming a single square image split by a physical seam where the panels meet. Rather than shoot vertical and lose the wide landscape entirely, I captured everything in 8K horizontal — far more resolution than the final delivery needed — and used that headroom to reframe each wide shot into two separate 4K vertical crops, one for each screen. Every shot had to be re-composed twice, and both halves had to line up cleanly across the seam so that no face, horizon, or key piece of action landed in the gap. It's a deceptively simple-looking result that took a lot of deliberate framing to get right.
+
+Everything was finished in 8K, professionally color-corrected, and composed for vertical display as a permanent installation. Contractually I can't post the video — but it's better in person anyway. Plan your visit at colonialwilliamsburg.org.`, 
+  
  },
 
 

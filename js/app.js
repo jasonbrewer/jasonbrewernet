@@ -117,7 +117,29 @@
     }).join("") + "</div>";
   }
 
-
+  function bodyHTML(text) {
+    if (!text) return "";
+    var out = String(text).split(/\n\s*\n/).map(function (block) {
+      block = block.replace(/^\s+|\s+$/g, "");
+      if (!block) return "";
+      if (block.indexOf("![") === 0 && block.slice(-1) === "]") {
+        var src = block.slice(2, -1).trim();
+        return '<img class="detail__inline-img" loading="lazy" alt="" src="' + esc(src) + '">';
+      }
+      if (block.indexOf("## ") === 0) {
+        var nl = block.indexOf("\n");
+        if (nl === -1) {
+          return '<h3 class="detail__subhead">' + esc(block.slice(3).trim()) + "</h3>";
+        }
+        var head = block.slice(3, nl).trim();
+        var rest = block.slice(nl + 1).trim();
+        return '<h3 class="detail__subhead">' + esc(head) + "</h3>" +
+               (rest ? "<p>" + esc(rest) + "</p>" : "");
+      }
+      return "<p>" + esc(block) + "</p>";
+    }).join("");
+    return '<div class="detail__body">' + out + "</div>";
+  }
   
   /* ---- project page (project.html?p=SLUG) ---- */
   function renderProject(mount) {
@@ -131,9 +153,7 @@
     }
     document.title = p.title;
     var eyebrow = p.category ? '<p class="detail__eyebrow">' + esc(p.category) + "</p>" : "";
-    var desc = p.description
-      ? '<div class="detail__body"><p>' +
-        esc(p.description).replace(/\n\s*\n/g, "</p><p>") + "</p></div>" : "";
+    var desc = bodyHTML(p.description);
     mount.innerHTML =
       '<a class="backlink" href="index.html">&larr; All work</a>' +
       '<header class="detail__head">' + eyebrow +
