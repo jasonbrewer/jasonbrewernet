@@ -88,11 +88,14 @@
     if (!v || !v.type) return "";
     var inner = "";
     if (v.type === "youtube") {
-      var yt = esc(v.id) + "?rel=0&modestbranding=1&playsinline=1" + (v.params ? "&" + esc(v.params) : "");
+      var yt = esc(v.id) + "?rel=0&modestbranding=1&playsinline=1" +
+        (v.autoplay ? "&autoplay=1&mute=1" : "") +
+        (v.params ? "&" + esc(v.params) : "");
       inner = '<iframe src="https://www.youtube.com/embed/' + yt +
         '" title="Video" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>';
     } else if (v.type === "vimeo") {
-      inner = '<iframe src="https://player.vimeo.com/video/' + esc(v.id) +
+      var vm = v.autoplay ? "?autoplay=1&muted=1" : "";
+      inner = '<iframe src="https://player.vimeo.com/video/' + esc(v.id) + vm +
         '" title="Video" allow="autoplay;fullscreen;picture-in-picture" allowfullscreen></iframe>';
     } else if (v.type === "embed") {
       inner = '<iframe src="' + esc(v.src) + '" title="Video" allowfullscreen></iframe>';

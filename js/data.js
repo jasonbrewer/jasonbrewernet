@@ -101,7 +101,7 @@ const PROJECTS = [
   title:"AI Love Virginia",        
   category:"Broadcast",                  
   description:"Adventure Capitalist was a CNBC original series created by the development team at Screaming Flea Productions, led by Jason Brewer. The show followed investors as they traveled to remote and rugged locations to test daring new products designed for outdoor adventure. Combining entrepreneurship with exploration, Adventure Capitalist highlighted both the risks and rewards of innovation — showcasing how bold ideas can thrive in some of the world's most extreme environments.", 
-  video:{ type:"youtube", id:"P_DVn_OL6vk" }
+  video:{ type:"youtube", id:"P_DVn_OL6vk", autoplay:true }
    },
 
 
@@ -112,7 +112,7 @@ const PROJECTS = [
   category:"Documentary",             
   description:"Documentary for Virginia Public Media and PBS. I was one of several videographers on this feature documentary, and shot three of its segments out in the Virginia landscape — working with natural light, terrain, and changing mountain conditions to capture the region the way it actually feels to be there. The goal on a project like this isn't a staged, polished-commercial look; it's authentic, place-driven footage that holds up for years and lets an audience picture themselves standing in it. Delivered broadcast-ready for national PBS distribution, professionally color-corrected and cut into the finished film. It's exactly the kind of outdoor field cinematography — real places, real conditions, evergreen value — that a destination lives or dies on. See more at pbs.org/show/shenandoah/", 
    videos: [
-    { type:"youtube", id:"4aUJHIzgrQs" },
+    { type:"youtube", id:"4aUJHIzgrQs", autoplay:true },
     { type:"youtube", vertical:true, id:"fG8o2hbkcts" },  
     ],
   gallery:["assets/gallery/01_shenandoah/richmond-forum.png"],  
@@ -125,7 +125,7 @@ const PROJECTS = [
   { slug:"colonial-williamsburg-foundation", 
   title:"Williamsburg Foundation",      
   category:"Institutional",  
-  video:{ type:"youtube", id:"4-aZhaRDq_4" },  
+  video:{ type:"youtube", id:"4-aZhaRDq_4", autoplay:true },  
   gallery:["assets/gallery/02_williamsburg/will_03.png","assets/gallery/02_williamsburg/will_04.png"],      
   description:`When the Colonial Williamsburg Foundation opened its 40,000-square-foot Campbell Archaeology Center — a signature project for America's 250th anniversary, and the only facility in the country to put both a working archaeology lab and its artifacts on public display — I was the videographer and editor behind its permanent video installation. Shot entirely in 8K across the historic grounds, combining ground-based field capture with aerial drone cinematography, it was built as an evergreen asset the institution will run every day for years.
 
@@ -147,7 +147,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   category:"Cinematography",          
   description:"A short-form series exploring the character of Richmond's neighborhoods for a central-Virginia client — capturing the streets, corridors, and everyday texture that give each part of the city its own feel. Shot and composed for 9:16 social from the ground up, in real light and real conditions, built to make a viewer want to go see the place for themselves. Local Virginia storytelling, delivered in the exact vertical format destination content lives on today.",
     videos: [
-    { type:"youtube", id:"laXbj7-Bl78" },
+    { type:"youtube", id:"laXbj7-Bl78", autoplay:true },
     { type:"youtube", vertical:true, id:"AgRmTnWwDlo" },
     { type:"youtube", id:"DXpgAoT3aNA" },  
     ]
@@ -185,7 +185,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
    title:"Location Drone Reel",          
    category:"Aerial",                  
    description:"From the bright lights of New York City to the golden coasts of California, our drones have captured stunning stories in every corner of America. We've filmed in bustling downtowns, quiet mountain towns, rolling farmland, and rugged coastlines — all on the move for clients who trust us to bring their vision to life. Our schedule takes us across the country to deliver cinematic, drone-driven footage that transforms locations into unforgettable stories.", 
-   video:{ type:"vimeo", id:"1010025895" }, 
+   video:{ type:"vimeo", id:"1010025895", autoplay:true }, 
 
  },
  
@@ -198,7 +198,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Combustion Inc",               
   category:"Corporate",               
   description:"Chris Young compares the Pacojet and the Ninja Creami. When it comes to turning frozen ingredients into silky-smooth desserts, two machines dominate the conversation: the Pacojet and the Ninja Creami. In a recent YouTube video, Chris Young of Combustion Inc. broke down the strengths and weaknesses of both, offering a rare side-by-side comparison that cuts through the hype. The Pacojet, long considered the gold standard in professional kitchens, has unmatched precision and produces luxuriously fine textures. But it comes with a serious price tag and is designed with restaurant-scale operations in mind. The Ninja Creami, on the other hand, is accessible to home cooks, relatively affordable, and surprisingly versatile. While it doesn't quite reach the same level of refinement as the Pacojet, it delivers impressive results for its price point — making frozen sorbets, gelato, and ice cream within minutes. The video highlights Chris Young's deep technical understanding of food science while giving viewers a practical, honest assessment: professionals may still lean on the Pacojet, but the Ninja Creami opens doors for experimentation in everyday kitchens. I had the privilege of producing, directing, and editing this video, ensuring the visuals matched the clarity and precision of Chris's insights. It's a piece designed to inform, inspire, and spark debate among chefs and passionate home cooks alike.", 
-  video:{ type:"youtube", id:"HCJsaPefl1c" } 
+  video:{ type:"youtube", id:"HCJsaPefl1c" autoplay:true } 
 },
 
 /* ======================== ROW 2 07 BuyingFranchise is a collection ======================= */
@@ -213,7 +213,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Richmond Rehabbers",           
   category:"HGTV",                    
   description:"Richmond Rehabbers was a one-hour home renovation series created and executive produced by Jason Brewer. Set in the historic city of Richmond, Virginia, the show followed ambitious home flippers as they transformed neglected properties into stunning, market-ready homes. With a focus on both design and the challenges of real estate, Richmond Rehabbers brought local stories to life with the same sharp production values and storytelling that define all of our projects.",
-  video:{ type:"youtube", id:"KAejJ3jH9t4" },
+  video:{ type:"youtube", id:"KAejJ3jH9t4" autoplay:true },
 
    },
   
@@ -234,7 +234,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Restraint and Seclusion",      
   category:"Documentary",             
   description:"Restraint and Seclusion is a powerful documentary examining the controversial use of restraint and seclusion practices in America's public schools. Through firsthand stories, expert insight, and investigative reporting, the film sheds light on how these practices impact students, families, and educators. Created to spark conversation and change, the documentary underscores the urgent need for safer, more compassionate approaches to student care and discipline.",
-  video:{ type:"youtube", id:"3cYyr5kvz4w" },
+  video:{ type:"youtube", id:"3cYyr5kvz4w", autoplay:true },
    },
  
 
@@ -244,7 +244,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Zero Waste",                   
   category:"Digital Series",          
   description:"Zero Waste is part of PBS's Science Matters climate change programming, exploring how circular design can help reduce waste and transform how we use resources. The series highlights innovators, communities, and industries rethinking materials to recycle, repurpose, and reuse — moving toward a world where nothing is wasted. With practical examples and inspiring stories, Zero Waste shows how the goal of wasting nothing is not only possible, but essential for a sustainable future.", 
-  video:{ type:"youtube", id:"kupiMqNBuQA" }, 
+  video:{ type:"youtube", id:"kupiMqNBuQA", autoplay:true }, 
 },
 
 /* ======================== ROW 3 13 The WAll International Production ======================= */
@@ -253,7 +253,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"The Wall",                     
   category:"International Production", 
   description:"The Wall was a three-part documentary series produced by Screaming Flea Productions in Seattle and commissioned by Discovery Latin America. The series explored Friendship Park, a unique meeting place along the U.S.–Mexico border in San Diego, where families and friends divided by immigration policy gather at the wall. Through intimate stories and personal perspectives, The Wall shed light on human connection, resilience, and the complexities of life at the border.",
-  video:{ type:"vimeo", id:"306288438#t=7" },
+  video:{ type:"vimeo", id:"306288438#t=7", autoplay:true },
 
    },
  
@@ -273,7 +273,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Hoarders",                     
   category:"A&E",                     
   description:"Hoarders is the Emmy-nominated A&E series that has run for 16 seasons, documenting the challenges and breakthroughs of people struggling with compulsive hoarding. Jason Brewer began working on the show in Season 1 and, in later seasons, contributed to the successful two-hour reboot episodes — helping craft treatments, pitches, and budgets that extended the series for an additional six years. His work on Hoarders reflects a deep experience in developing compelling, emotionally resonant unscripted television.",
-  video:{ type:"youtube", id:"_b76FleszLk" },
+  video:{ type:"youtube", id:"_b76FleszLk", autoplay:true },
    },
  
 /* ======================== ROW 4 16 cor ads  ======================= */
@@ -283,7 +283,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Joule + Amazon Alexa",        
    category:"Corporate Ads",           
    description:"This video was part of a three-part series created for ChefSteps' Joule Sous Vide, an innovative smart cooking device from the Seattle-based food tech startup. Guided by Alex, the series walked users step by step through the setup process, making advanced cooking accessible to home chefs. By combining clean visuals, clear instruction, and engaging storytelling, the project helped Joule stand out as a sleek, approachable tool in the growing world of smart kitchen technology.",
-   video:{ type:"youtube", id:"8fzHqKJp_ds" },
+   video:{ type:"youtube", id:"8fzHqKJp_ds", autoplay:true },
     },
   
 
@@ -304,7 +304,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Joule by ChefSteps",          
   category:"Corporate Ads",           
   description:"As part of Joule Sous Vide's customer education series, this video showed home cooks how to achieve a flawless steak every time using smart sous vide technology. With step-by-step guidance, mouthwatering visuals, and Joule's sleek app integration, the piece demonstrated both precision and simplicity. Designed to inspire confidence, it positioned Joule as the go-to tool for restaurant-quality results at home — helping drive excitement and adoption of the product among everyday cooks.",
-  video:{ type:"youtube", id:"GJKXYABapeE" },
+  video:{ type:"youtube", id:"GJKXYABapeE", autoplay:true },
    },
   
 
@@ -322,7 +322,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Legacy List with Matt Paxton", 
   category:"PBS",                     
   description:"Legacy List with Matt Paxton is a nationally broadcast PBS series that helps families preserve memories and uncover hidden treasures as they downsize their homes. Jason Brewer served as Post Production Supervisor, overseeing the edit pipeline, managing teams of remote editors and assistants, and ensuring every episode met PBS's technical and storytelling standards. His role was central in delivering the polished, heartfelt episodes that have made Legacy List a beloved public television program.",
-  video:{ type:"youtube", id:"HqmdLfbQXZw" },
+  video:{ type:"youtube", id:"HqmdLfbQXZw", autoplay:true },
    },
  
 /* ======================== ROW 5 21 WeatherVClimate  ======================= */
@@ -330,7 +330,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Weather vs. Climate",          
   category:"PBS",                     
   description:"As part of PBS's Science Matters initiative, this climate change series explores the critical distinction between weather and climate. Through clear science communication, engaging visuals, and expert interviews, the program helps audiences understand how short-term weather patterns differ from long-term climate trends — and why that distinction matters in the fight against global warming. Designed to inform and inspire, the series empowers viewers with knowledge to engage in today's most urgent environmental conversations.", 
-  video:{ type:"vimeo", id:"1155070963" } 
+  video:{ type:"vimeo", id:"1155070963", autoplay:true } 
 },
 
 
@@ -339,7 +339,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Kitchen Crashers, Season 8",   
   category:"HGTV",                    
   description:"Kitchen Crashers was a hit DIY Network series where unsuspecting homeowners were surprised with dramatic kitchen makeovers. Jason Brewer served as Supervising Producer for Season 8 in Las Vegas, overseeing fast-paced renovation builds from start to finish. He managed production in the field, guided story development, and worked closely with editors to shape engaging episodes — bringing the excitement and transformation of each project to life for viewers nationwide.", 
-  video:{ type:"youtube", id:"XtD23rOXpLk" }
+  video:{ type:"youtube", id:"XtD23rOXpLk", autoplay:true }
 },
 
 /* ======================== ROW 6 23 KitchenCrashers=  ======================= */
@@ -357,7 +357,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Freaky Sweets",                
   category:"Culinary",                
   description:"Freaky Sweets was a three-part Halloween cooking series on Food Network, created by Jason Brewer while at Screaming Flea Productions. The show brought a spooky twist to the culinary world, featuring pastry chefs and sugar artists competing to craft eerie, over-the-top desserts and edible creations. With its mix of festive fun, competition, and jaw-dropping artistry, Freaky Sweets delivered the perfect blend of Halloween spirit and Food Network flair.", 
-  video:{ type:"vimeo", id:"306282972" } 
+  video:{ type:"vimeo", id:"306282972", autoplay:true } 
 },
 
 
@@ -366,7 +366,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Learning with Technie",        
   category:"Education",              
   description:"Learning with Technie was a six-part PBS educational series created to introduce children to technology in a fun and approachable way. Featuring “Technie,” a friendly animated character, the program guided kids through the basics of using computers, exploring digital tools, and imagining what technology can do. By blending engaging animation with hands-on learning, Learning with Technie encouraged curiosity and built confidence — helping young audiences develop essential skills for a digital world.",
-  video:{ type:"vimeo", id:"LNrY9J5Qs-A" } 
+  video:{ type:"vimeo", id:"LNrY9J5Qs-A", autoplay:true } 
     },
  
 
@@ -375,7 +375,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Adventure Capitalists",        
   category:"Series",                  
   description:"Adventure Capitalist was a CNBC original series created by the development team at Screaming Flea Productions, led by Jason Brewer. The show followed investors as they traveled to remote and rugged locations to test daring new products designed for outdoor adventure. Combining entrepreneurship with exploration, Adventure Capitalist highlighted both the risks and rewards of innovation — showcasing how bold ideas can thrive in some of the world's most extreme environments.", 
-  video:{ type:"vimeo", id:"306291724" }
+  video:{ type:"vimeo", id:"306291724", autoplay:true }
    },
 
 
