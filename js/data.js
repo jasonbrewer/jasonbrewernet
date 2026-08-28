@@ -115,7 +115,7 @@ const PROJECTS = [
     { type:"youtube", id:"4aUJHIzgrQs" },
     { type:"youtube", vertical:true, id:"fG8o2hbkcts" },  
     ],
-  gallery:["assets/gallery/02_williamsburg/williamsburg_8k_reframe_eli5.png"],  
+  gallery:["assets/gallery/01_shenandoah/richmond-forum.png"],  
 },
 
 
