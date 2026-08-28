@@ -198,7 +198,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Combustion Inc",               
   category:"Corporate",               
   description:"Chris Young compares the Pacojet and the Ninja Creami. When it comes to turning frozen ingredients into silky-smooth desserts, two machines dominate the conversation: the Pacojet and the Ninja Creami. In a recent YouTube video, Chris Young of Combustion Inc. broke down the strengths and weaknesses of both, offering a rare side-by-side comparison that cuts through the hype. The Pacojet, long considered the gold standard in professional kitchens, has unmatched precision and produces luxuriously fine textures. But it comes with a serious price tag and is designed with restaurant-scale operations in mind. The Ninja Creami, on the other hand, is accessible to home cooks, relatively affordable, and surprisingly versatile. While it doesn't quite reach the same level of refinement as the Pacojet, it delivers impressive results for its price point — making frozen sorbets, gelato, and ice cream within minutes. The video highlights Chris Young's deep technical understanding of food science while giving viewers a practical, honest assessment: professionals may still lean on the Pacojet, but the Ninja Creami opens doors for experimentation in everyday kitchens. I had the privilege of producing, directing, and editing this video, ensuring the visuals matched the clarity and precision of Chris's insights. It's a piece designed to inform, inspire, and spark debate among chefs and passionate home cooks alike.", 
-  video:{ type:"youtube", id:"HCJsaPefl1c" autoplay:true } 
+  video:{ type:"youtube", id:"HCJsaPefl1c", autoplay:true } 
 },
 
 /* ======================== ROW 2 07 BuyingFranchise is a collection ======================= */
@@ -213,7 +213,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Richmond Rehabbers",           
   category:"HGTV",                    
   description:"Richmond Rehabbers was a one-hour home renovation series created and executive produced by Jason Brewer. Set in the historic city of Richmond, Virginia, the show followed ambitious home flippers as they transformed neglected properties into stunning, market-ready homes. With a focus on both design and the challenges of real estate, Richmond Rehabbers brought local stories to life with the same sharp production values and storytelling that define all of our projects.",
-  video:{ type:"youtube", id:"KAejJ3jH9t4" autoplay:true },
+  video:{ type:"youtube", id:"KAejJ3jH9t4", autoplay:true },
 
    },
   
@@ -293,7 +293,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Fry Fidelity",                 
   category:"Corporate",               
   description:"“Fry Fidelity: How to Fry Chicken with Chris Young from ChefSteps” became a viral sensation, racking up millions of views. In this fan-favorite video, Chris breaks down the science and craft of frying chicken to perfection, blending precision cooking with irresistible comfort food. His step-by-step guidance, ChefSteps flair, and crisp golden results captivated home cooks and food lovers around the world, making it one of the platform's most iconic tutorials. Jason Brewer wrote, directed and edited this project.", 
-  video:{ type:"youtube", id:"wXsgWJmgb0Q" } 
+  video:{ type:"youtube", id:"wXsgWJmgb0Q", autoplay:true } 
 },
 
 
