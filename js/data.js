@@ -26,6 +26,7 @@ const HOME = [
   { title:"Shenandoah",              thumb:"assets/thumbs/shenandoah.png",              href:"project.html?p=shenandoah-documentary" },
   { title:"Williamsburg Foundation", thumb:"assets/thumbs/williamsburg.png",            href:"project.html?p=colonial-williamsburg-foundation" },
   { title:"City B-Roll",             thumb:"assets/thumbs/trainbridge.png",             href:"project.html?p=city" },
+  { title:"Ilove Virginia",          thumb:"assets/thumbs/loveposter.png",              href:"project.html?p=I-Love-VA" },
   { title:"The Richmond Forum",      thumb:"assets/thumbs/richmond-forum.png",          href:"project.html?p=forum" },
   { title:"Location Drone Reel",     thumb:"assets/thumbs/DroneReel.jpg",               href:"project.html?p=drone" },
   { title:"Combustion Inc",          thumb:"assets/thumbs/combustion.png",              href:"project.html?p=combustion-inc" },
@@ -48,7 +49,7 @@ const HOME = [
   { title:"Freaky Sweets",           thumb:"assets/thumbs/freaky-sweets.png",           href:"project.html?p=freaky-sweets" },
   { title:"Education",               thumb:"assets/thumbs/learntechne.png",             href:"project.html?p=learning-with-teche" },
   { title:"Adventure Capitalists",   thumb:"assets/thumbs/adventure.png",               href:"project.html?p=adventure-capitalist" },
-  { title:"Ilove Virginia",          thumb:"assets/thumbs/loveposter.png",                    href:"project.html?p=I-Love-VA" },
+  
 ];
 
 
@@ -91,18 +92,6 @@ const COLLECTIONS = {
 
 
 const PROJECTS = [
-
-
-
-
-
-/* ======================== ROW 7 27 Love Virginia ======================= */
-  { slug:"I-Love-VA",             
-  title:"AI Love Virginia",        
-  category:"Broadcast",                  
-  description:"Adventure Capitalist was a CNBC original series created by the development team at Screaming Flea Productions, led by Jason Brewer. The show followed investors as they traveled to remote and rugged locations to test daring new products designed for outdoor adventure. Combining entrepreneurship with exploration, Adventure Capitalist highlighted both the risks and rewards of innovation — showcasing how bold ideas can thrive in some of the world's most extreme environments.", 
-  video:{ type:"youtube", id:"P_DVn_OL6vk", autoplay:true }
-   },
 
 
 
@@ -379,6 +368,18 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
    },
 
 
+/* ======================== ROW 7 27 Love Virginia ======================= */
+  { slug:"I-Love-VA",             
+  title:"AI Love Virginia",        
+  category:"Broadcast", 
+  video:{ type:"youtube", id:"P_DVn_OL6vk", autoplay:true },                 
+  description:`## www.ilovevirginiatvshow.com  
+
+  I Love Virginia is a pop-culture clip show for VPM, celebrating the people, places, moments, and oddities that make the Commonwealth unmistakably itself. Part nostalgia trip, part love letter, the series pulls together clips, memories, and local voices into a fast, funny, affectionate look at everything Virginians know and everyone else is missing out on — from the landmarks and food to the music, TV moments, and homegrown legends that define the state. Made for public television and built to celebrate Virginia in all its weird, wonderful glory. Learn more at ilovevirginiatvshow.com.`
+  
+
+
+},
 
 
    /* =======================  Steri clean Project pages from Steri-collection ===================== */
