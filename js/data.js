@@ -390,12 +390,15 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   /* ---- Steri-Clean collection ---- */
 
 
-  { slug:"discovery-day",                
-  title:"Discovery Day",                
-  category:"Steri-Clean Collection", 
-  locked:true, 
+
+  { slug:"discovery-day",
+  title:"Discovery Day",
+  category:"Steri-Clean Collection",
+  locked:true,
   password:"steri2026", 
-  description:"Add the write-up for this project here." },
+  description:"This Discovery Day video gives you a clear, no-fluff look at how the franchise really works. In just a few minutes, you'll hear exactly how royalties are structured, what to expect for start-up costs, and how territories are defined and protected. It also covers how Steri-Clean started and continues to grow. It's designed to answer the big financial and operational questions upfront so you can quickly decide if this opportunity is the right fit for your goals and your market.",
+  video:{ type:"youtube", id:"C_Qb29LIn-0" }
+  },
 
   { slug:"buying-a-franchise",
   title:"Buying a Franchise",
