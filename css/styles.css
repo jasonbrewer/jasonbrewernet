@@ -367,6 +367,22 @@ a { color: inherit; text-decoration: none; }
   background: var(--surface);
 }
 
+/* ---- passwrod gate ---- */
+.gate { max-width: 420px; margin: 2rem auto; text-align: center; }
+.gate__msg { color: #e9e6df; margin-bottom: 1rem; }
+.gate__input {
+  width: 100%; padding: .7rem .9rem; margin-bottom: .8rem;
+  background: #141311; color: #e9e6df;
+  border: 1px solid #2e2c28; border-radius: 6px;
+}
+.gate__input:focus { outline: none; border-color: #c98a3c; }
+.gate__btn {
+  padding: .6rem 1.4rem; cursor: pointer;
+  background: #c98a3c; color: #141311; font-weight: 700;
+  border: none; border-radius: 6px;
+}
+.gate__error { color: #c98a3c; margin-top: .8rem; }
+
 /* ============================================================
    RESPONSIVE + MOTION
 ============================================================ */

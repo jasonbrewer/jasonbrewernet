@@ -42,7 +42,7 @@ const HOME = [
   { title:"Fry Fidelity",            thumb:"assets/thumbs/fry-fidelity.png",            href:"project.html?p=fry-fiedelity" },
   { title:"Corporate Ads",           thumb:"assets/thumbs/corporate-steak.png",         href:"project.html?p=joule-steak" },
   { title:"Lost Lake Mystery",       thumb:"assets/thumbs/lost-lake.png",               href:"project.html?p=lost-lake" },
-  { title:"Legacy List",             thumb:"assets/thumbs/legacy.png",                  href:"project.html?p=legacy-list-w-matt-paxton" },
+  { title:"PBS",                     thumb:"assets/thumbs/legacy.png",                  href:"project.html?p=legacy-list-w-matt-paxton" },
   { title:"Weather vs. Climate",     thumb:"assets/thumbs/weather.png",                 href:"project.html?p=weather-v-climate" },
   { title:"Kitchen Crashers",        thumb:"assets/thumbs/kitchen-crashers.png",        href:"project.html?p=citchen-crashers-season-8" },
   { title:"Amazon Seller Forums",    thumb:"assets/thumbs/amazon.png",                  href:"project.html?p=amazon-sellers-foum" },
@@ -388,13 +388,14 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
    /* =======================  Steri clean Project pages from Steri-collection ===================== */
    /* =======================  Steri clean Project pages from Steri-collection ===================== */
   /* ---- Steri-Clean collection ---- */
-  { slug:"discovery-day",
-  title:"Discovery Day",
-  category:"Steri-Clean Collection",
-  locked:true,
-  description:"This Discovery Day video gives you a clear, no-fluff look at how the franchise really works. In just a few minutes, you'll hear exactly how royalties are structured, what to expect for start-up costs, and how territories are defined and protected. It also covers how Steri-Clean started and continues to grow. It's designed to answer the big financial and operational questions upfront so you can quickly decide if this opportunity is the right fit for your goals and your market.",
-  video:{ type:"youtube", id:"C_Qb29LIn-0" }
-  },
+
+
+  { slug:"discovery-day",                
+  title:"Discovery Day",                
+  category:"Steri-Clean Collection", 
+  locked:true, 
+  password:"steri2026", 
+  description:"Add the write-up for this project here." },
 
   { slug:"buying-a-franchise",
   title:"Buying a Franchise",

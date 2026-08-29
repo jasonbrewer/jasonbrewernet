@@ -157,11 +157,44 @@
     document.title = p.title;
     var eyebrow = p.category ? '<p class="detail__eyebrow">' + esc(p.category) + "</p>" : "";
     var desc = bodyHTML(p.description);
-    mount.innerHTML =
+
+    var head =
       '<a class="backlink" href="index.html">&larr; All work</a>' +
       '<header class="detail__head">' + eyebrow +
-        '<h1 class="detail__title">' + esc(p.title) + "</h1></header>" +
-      videoBlock(p.video) + videosBlock(p.videos) + galleryBlock(p.gallery) + desc;
+        '<h1 class="detail__title">' + esc(p.title) + "</h1></header>";
+
+    var content = videoBlock(p.video) + videosBlock(p.videos) + galleryBlock(p.gallery) + desc;
+
+    if (p.locked && p.password) {
+      mount.innerHTML = head +
+        '<div class="gate">' +
+          '<p class="gate__msg">This project is password protected.</p>' +
+          '<input class="gate__input" type="password" placeholder="Enter password" autocomplete="off">' +
+          '<button class="gate__btn" type="button">View</button>' +
+          '<p class="gate__error" hidden>Incorrect password.</p>' +
+        "</div>";
+
+      var input = mount.querySelector(".gate__input");
+      var btn   = mount.querySelector(".gate__btn");
+      var err   = mount.querySelector(".gate__error");
+
+      var tryUnlock = function () {
+        if (input.value === p.password) {
+          mount.innerHTML = head + content;
+        } else {
+          err.hidden = false;
+          input.value = "";
+          input.focus();
+        }
+      };
+      btn.addEventListener("click", tryUnlock);
+      input.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") tryUnlock();
+      });
+      return;
+    }
+
+    mount.innerHTML = head + content;
   }
 
   /* ---- boot: pick behaviour from whichever mount exists ---- */
