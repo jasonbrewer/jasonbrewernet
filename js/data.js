@@ -28,6 +28,7 @@ const HOME = [
   { title:"City B-Roll",             thumb:"assets/thumbs/trainbridge.png",             href:"project.html?p=city" },
   { title:"Ilove Virginia",          thumb:"assets/thumbs/loveposter.png",              href:"project.html?p=I-Love-VA" },
   { title:"The Richmond Forum",      thumb:"assets/thumbs/richmond-forum.png",          href:"project.html?p=forum" },
+  { title:"Emily Chang",             thumb:"assets/thumbs/emily.png",                   href:"project.html?p=emily" },
   { title:"Location Drone Reel",     thumb:"assets/thumbs/DroneReel.jpg",               href:"project.html?p=drone" },
   { title:"Combustion Inc",          thumb:"assets/thumbs/combustion.png",              href:"project.html?p=combustion-inc" },
   { title:"Buying a Franchise",      subtitle:"Steri-Clean Collection",                 thumb:"assets/thumbs/buying-a-franchise.png", href:"collection.html?c=steri-clean" },
@@ -177,7 +178,16 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
    video:{ type:"vimeo", id:"1010025895", autoplay:true }, 
 
  },
+
+ /* ======================== Emily Chang   ======================= */
  
+   { slug:"emily",                           
+   title:"Emily Chang Bloomburg",          
+   category:"Broadcast",                  
+   description:"It's hard to belive that seven years ago we uploaded this video and pitched Emily Chang, creating a fantastic show about Tech in America. Today this show airs on bloomburg tv.", 
+   video:{ type:"vimeo", id:"299147051", autoplay:true }, 
+
+ },
 
 
 /* ======================== ROW 2 06 Combustion   ======================= */
