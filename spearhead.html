@@ -263,6 +263,22 @@
   }
   .ig-fallback:hover { color: var(--text); }
 
+  .stills {
+  display: grid;
+  grid-template-columns: 1fr;   /* stacked on narrow screens */
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+@media (min-width: 640px) {
+  .stills { grid-template-columns: 1fr 1fr; }   /* two-up on wider screens */
+}
+.stills img {
+  width: 100%;
+  height: auto;                 /* full flat PNG, no crop */
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
   /* ============================================================
      CLOSING
   ============================================================ */
@@ -372,8 +388,8 @@
 
   <!-- ==================== 02 · WILLIAMSBURG ==================== -->
   <section class="piece" id="williamsburg">
-    <p class="piece__eyebrow">02 · Institutional — Colonial Williamsburg Foundation</p>
-    <h2 class="piece__title">Campbell Archaeology Center</h2>
+    <p class="piece__eyebrow">02 · Institutional — Campbell Archaeology Center</p>
+    <h2 class="piece__title"> Colonial Williamsburg Foundation</h2>
     <p class="piece__tags">8K capture · Aerial + ground · Composed for vertical</p>
     <div class="media">
       <div class="media__frame">
@@ -381,6 +397,10 @@
           title="Colonial Williamsburg — Campbell Archaeology Center" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
+    <div class="stills">
+  <img loading="lazy" src="assets/gallery/02_williamsburg/will_03.png" alt="Campbell Archaeology Center installation still">
+  <img loading="lazy" src="assets/gallery/02_williamsburg/will_04.png" alt="Campbell Archaeology Center installation still">
+</div>
     <p class="piece__body">
       I was the videographer and editor behind the permanent installation for Colonial Williamsburg's new
       40,000-sq-ft Campbell Archaeology Center — shot entirely in 8K, combining aerial drone and ground field
@@ -413,7 +433,7 @@
   <!-- ==================== 04 · NEIGHBORHOODS ==================== -->
   <section class="piece" id="neighborhoods">
     <p class="piece__eyebrow">04 · Cinematography — Central Virginia</p>
-    <h2 class="piece__title">Neighborhoods</h2>
+    <h2 class="piece__title">Central Virginia Neighborhoods</h2>
     <p class="piece__tags">Native 9:16 · Virginia · Ground-based</p>
     <div class="media media-row">
       <div class="media__frame">
@@ -435,37 +455,17 @@
     </p>
   </section>
 
-  <!-- ==================== 05 · TRAIN SHOT ==================== -->
-  <section class="piece" id="train">
-    <p class="piece__eyebrow">05 · Aerial — Central Virginia</p>
-    <h2 class="piece__title">The Train Shot</h2>
-    <p class="piece__tags">Aerial · Vertical 9:16 · Precision</p>
-    <div class="ig-wrap">
-      <div class="media__frame ig-frame">
-        <iframe loading="lazy" src="https://www.instagram.com/reel/Da6tYRMhNxBwFpT9y0qDIATvojbCF-2inlRfJQ0/embed/"
-          title="The Train Shot — Instagram reel" scrolling="no" allowtransparency="true" allowfullscreen></iframe>
-      </div>
-      <a class="ig-fallback" href="https://www.instagram.com/reel/Da6tYRMhNxBwFpT9y0qDIATvojbCF-2inlRfJQ0/" target="_blank" rel="noopener">Open the reel on Instagram →</a>
-    </div>
-    <p class="piece__body">
-      This one took three days on the banks of the James River — finding a safe takeoff and landing, predicting
-      the train schedule, and timing the sun and cloud cover to line up in a single pass. Patience and planning
-      are what separate a usable aerial from a lucky one, and it's how I'll approach the signature shot on each
-      trail system.
-    </p>
-  </section>
 
   <!-- ==================== 06 · MOUNTAIN RANGE ==================== -->
   <section class="piece" id="pnw">
     <p class="piece__eyebrow">06 · Aerial — Pacific Northwest</p>
     <h2 class="piece__title">Mountain Range</h2>
     <p class="piece__tags">Aerial · Outdoor · Vertical 9:16</p>
-    <div class="ig-wrap">
-      <div class="media__frame ig-frame">
-        <iframe loading="lazy" src="https://www.instagram.com/reel/DL7rwqksgKW69QGVTNZzUtRLEjCVcw-i7IQgfA0/embed/"
-          title="Mountain Range — Instagram reel" scrolling="no" allowtransparency="true" allowfullscreen></iframe>
+        <div class="media">
+      <div class="media__frame">
+        <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/66Br3mLX73o?rel=0&amp;modestbranding=1&amp;playsinline=1"
+          title="Colonial Williamsburg — Campbell Archaeology Center" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <a class="ig-fallback" href="https://www.instagram.com/reel/DL7rwqksgKW69QGVTNZzUtRLEjCVcw-i7IQgfA0/" target="_blank" rel="noopener">Open the reel on Instagram →</a>
     </div>
     <p class="piece__body">
       Outdoor aerial and scenic cinematography of a Pacific Northwest range for a national client, cut to a
@@ -474,36 +474,24 @@
     </p>
   </section>
 
-  <!-- ==================== 07 · FLY-THROUGH ==================== -->
-  <section class="piece" id="florida">
-    <p class="piece__eyebrow">07 · Aerial — Central Florida</p>
-    <h2 class="piece__title">Small-Town Fly-Through</h2>
-    <p class="piece__tags">Aerial · Destination · Vertical 9:16</p>
-    <div class="ig-wrap">
-      <div class="media__frame ig-frame">
-        <iframe loading="lazy" src="https://www.instagram.com/reel/C8BS7M3tZGtC8jPyC8UctePGL1dZVsRVTuFdzs0/embed/"
-          title="Small-Town Fly-Through — Instagram reel" scrolling="no" allowtransparency="true" allowfullscreen></iframe>
-      </div>
-      <a class="ig-fallback" href="https://www.instagram.com/reel/C8BS7M3tZGtC8jPyC8UctePGL1dZVsRVTuFdzs0/" target="_blank" rel="noopener">Open the reel on Instagram →</a>
-    </div>
-    <p class="piece__body">
-      A drone fly-through establishing a small Florida town for a national broadcaster, delivered vertical for
-      social. Destination place-setting from the air — the kind of shot that makes a viewer want to go, framed
-      for the Reels and Meta placements SRRA prioritizes.
-    </p>
-  </section>
 
   <!-- ==================== 08 · DRONE MOVE ==================== -->
   <section class="piece" id="franchise">
     <p class="piece__eyebrow">08 · Aerial — National Brand</p>
     <h2 class="piece__title">Precision Drone Move</h2>
     <p class="piece__tags">Aerial · Campaign-grade · Vertical 9:16</p>
-    <div class="ig-wrap">
-      <div class="media__frame ig-frame">
-        <iframe loading="lazy" src="https://www.instagram.com/reel/DNOfE0uv0eCIF6U0IPw-ChxWj1pA8F9JJ2nm7s0/embed/"
-          title="Precision Drone Move — Instagram reel" scrolling="no" allowtransparency="true" allowfullscreen></iframe>
+    <div class="media media-row">
+      <div class="media__frame">
+        <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/t35e_zFNjb4?rel=0&amp;modestbranding=1&amp;playsinline=1"
+          title="Presicion Drone Fly Fly-Through" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
-      <a class="ig-fallback" href="https://www.instagram.com/reel/DNOfE0uv0eCIF6U0IPw-ChxWj1pA8F9JJ2nm7s0/" target="_blank" rel="noopener">Open the reel on Instagram →</a>
+      <div>
+        <p class="media-sub__label">Vertical 9:16 cut</p>
+        <div class="media__frame media__frame--vertical">
+          <iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/eZEidAuxuBQ?rel=0&amp;modestbranding=1&amp;playsinline=1"
+            title="Shenandoah — vertical cut" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
     <p class="piece__body">
       A choreographed aerial produced for a national franchise brand and delivered as a vertical Reel —
@@ -512,24 +500,7 @@
     </p>
   </section>
 
-  <!-- ==================== 09 · DOWNTOWN ==================== -->
-  <section class="piece" id="downtown">
-    <p class="piece__eyebrow">09 · Aerial — Small-Town Downtown</p>
-    <h2 class="piece__title">Downtown Aerial Showcase</h2>
-    <p class="piece__tags">Aerial · Destination · Vertical 9:16</p>
-    <div class="ig-wrap">
-      <div class="media__frame ig-frame">
-        <iframe loading="lazy" src="https://www.instagram.com/reel/CzuvCN5tKIXNh8j6haugSji5p31bRR0KrcWYio0/embed/"
-          title="Downtown Aerial Showcase — Instagram reel" scrolling="no" allowtransparency="true" allowfullscreen></iframe>
-      </div>
-      <a class="ig-fallback" href="https://www.instagram.com/reel/CzuvCN5tKIXNh8j6haugSji5p31bRR0KrcWYio0/" target="_blank" rel="noopener">Open the reel on Instagram →</a>
-    </div>
-    <p class="piece__body">
-      Aerial cinematography showcasing a small town's downtown for a national broadcaster, composed for vertical
-      short-form — destination marketing and drone capability in a single piece, in the format that matters most
-      for this library.
-    </p>
-  </section>
+
 
   <!-- ==================== CLOSING ==================== -->
   <section class="closing">
