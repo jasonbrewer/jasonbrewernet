@@ -243,9 +243,11 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
   title:"Zero Waste",                   
   category:"Digital Series",          
   description:"Zero Waste is part of PBS's Science Matters climate change programming, exploring how circular design can help reduce waste and transform how we use resources. The series highlights innovators, communities, and industries rethinking materials to recycle, repurpose, and reuse — moving toward a world where nothing is wasted. With practical examples and inspiring stories, Zero Waste shows how the goal of wasting nothing is not only possible, but essential for a sustainable future.", 
-  video:{ type:"youtube", id:"kupiMqNBuQA", autoplay:true }, 
+  videos: [
+    { type:"youtube", id:"kupiMqNBuQA", autoplay:true },
+    { type:"youtube", vertical:true, id:"vK2GqtCZTlY?si" },  
+    ], 
 },
-
 /* ======================== ROW 3 13 The WAll International Production ======================= */
 
   { slug:"the-wall",                         
