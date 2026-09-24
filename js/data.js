@@ -100,7 +100,7 @@ const PROJECTS = [
   { slug:"shenandoah-documentary",           
   title:"Shenandoah",                   
   category:"Documentary",             
-  description:"Documentary for Virginia Public Media and PBS. I was one of several videographers on this feature documentary, and shot three of its segments out in the Virginia landscape — working with natural light, terrain, and changing mountain conditions to capture the region the way it actually feels to be there. The goal on a project like this isn't a staged, polished-commercial look; it's authentic, place-driven footage that holds up for years and lets an audience picture themselves standing in it. Delivered broadcast-ready for national PBS distribution, professionally color-corrected and cut into the finished film. It's exactly the kind of outdoor field cinematography — real places, real conditions, evergreen value — that a destination lives or dies on. See more at pbs.org/show/shenandoah/", 
+  description:"Documentary for Virginia Public Media and PBS produced by Orange Frame Productions in Richmond Virginia. I was one of several videographers on this feature documentary, and shot three of its segments out in the Virginia landscape — working with natural light, terrain, and changing mountain conditions to capture the region the way it actually feels to be there. The goal on a project like this isn't a staged, polished-commercial look; it's authentic, place-driven footage that holds up for years and lets an audience picture themselves standing in it. Delivered broadcast-ready for national PBS distribution, professionally color-corrected and cut into the finished film. It's exactly the kind of outdoor field cinematography — real places, real conditions, evergreen value — that a destination lives or dies on. See more at pbs.org/show/shenandoah/", 
    videos: [
     { type:"youtube", id:"4aUJHIzgrQs", autoplay:true },
     { type:"youtube", vertical:true, id:"fG8o2hbkcts" },  
@@ -117,7 +117,7 @@ const PROJECTS = [
   category:"Institutional",  
   video:{ type:"youtube", id:"4-aZhaRDq_4", autoplay:true },  
   gallery:["assets/gallery/02_williamsburg/will_03.png","assets/gallery/02_williamsburg/will_04.png"],      
-  description:`When the Colonial Williamsburg Foundation opened its 40,000-square-foot Campbell Archaeology Center — a signature project for America's 250th anniversary, and the only facility in the country to put both a working archaeology lab and its artifacts on public display — I was the videographer and editor behind its permanent video installation. Shot entirely in 8K across the historic grounds, combining ground-based field capture with aerial drone cinematography, it was built as an evergreen asset the institution will run every day for years.
+  description:`When the Colonial Williamsburg Foundation opened its 40,000-square-foot Campbell Archaeology Center — a signature project for America's 250th anniversary, and the only facility in the country to put both a working archaeology lab and its artifacts on public display — I was the videographer and editor behind its permanent video installation produced by Orange Frame Productions and Directed by Elizabeth Crowl. Shot entirely in 8K across the historic grounds, combining ground-based field capture with aerial drone cinematography, it was built as an evergreen asset the institution will run every day for years.
 
 ## Aspect Ratio Problem-Solving
 
@@ -382,7 +382,7 @@ Everything was finished in 8K, professionally color-corrected, and composed for 
 
 /* ======================== ROW 7 27 Love Virginia ======================= */
   { slug:"I-Love-VA",             
-  title:"AI Love Virginia",        
+  title:"I Love Virginia",        
   category:"Broadcast", 
   video:{ type:"youtube", id:"P_DVn_OL6vk", autoplay:true },                 
   description:`## www.ilovevirginiatvshow.com  
